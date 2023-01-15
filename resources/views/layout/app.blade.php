@@ -64,7 +64,7 @@
                 </button>
               </div>
 
-              
+
               </form>
 
 
@@ -218,10 +218,10 @@
           </a>
         </li>
 
-      
-        
 
-        
+
+
+
 
 
         <li class="nav-item dropdown">
@@ -230,7 +230,7 @@
           </a>
           <ul class="dropdown-menu">
 
-              @guest 
+              @guest
               <li><a class="dropdown-item" href="{{route('login')}}">SE CONNECTERd </a></li>
             <li><a class="dropdown-item" href="{{route('register')}}">CREEZ VOTRE COMPTE </a></li>
 
@@ -239,7 +239,7 @@
             <li><a class="dropdown-item" href="{{route('register')}}">CREEZ VOTRE COMPTE </a></li>
 
               @endguest
-          
+
 
           </ul>
         </li>
@@ -348,7 +348,7 @@
               MON COMPTE
               </a>
               <ul class="dropdown-menu">
-                @guest   
+                @guest
                 <li><a class="dropdown-item" href="{{route('login')}}">SE CONNECTER</a></li>
                 <li><a class="dropdown-item" href="{{route('register')}}">CREEZ VOTRE COMPTE</a></li>
 
@@ -357,7 +357,7 @@
                 <li><a class="dropdown-item" href="{{route('dashboard')}}">TABLEAU DE BORD</a></li>
 
                 @endguest
-            
+
               </ul>
             </li>
           </ul>
