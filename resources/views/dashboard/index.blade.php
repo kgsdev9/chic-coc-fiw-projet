@@ -41,7 +41,7 @@
 
                                                 <!--end col-->
                                                 <div class="col-auto">
-                                                    <a href="{{url('/')}}" class="btn btn-soft-primary" target="about_blank">Accueil</a>
+                                                    <a href="{{url('/')}}" class="btn btn-soft-primary" target="about_blank">ACCUEIL</a>
 
                                                 </div>
 

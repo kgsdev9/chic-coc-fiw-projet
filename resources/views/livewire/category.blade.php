@@ -1,5 +1,25 @@
 <div>
 
+
+ <!-- breadcrumb-area -->
+ <div class="breadcrumb-area breadcrumb-bg-two">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-content">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">ACCUEIL</a></li>
+                                    <li class="breadcrumb-item"><a href="shop.html">NOS BOUTIQUES</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Spices Food</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb-area-end -->
     <section class="best-sellers-area pt-85 pb-70">
         <div class="container">
             <div class="row align-items-end mb-40">
@@ -32,7 +52,7 @@
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <h6 class="title"><a href="shop-details.html">Uncle Orange Vanla Ready Pice</a></h6>
+                                <h6 class="title"><a href="shop-details.html">Uncle Orange</a></h6>
                             </div>
                         </div>
                     </div>

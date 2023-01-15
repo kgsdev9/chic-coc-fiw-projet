@@ -14,7 +14,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto"><div class="header-logo">
                         <a href="{{url('/')}}"><img src="{{asset('logo.jpg')}}" alt="Invce"></a></div></div><div class="col-auto">
-
+                         
 
                         </div></div><div class="header-bottom"><div class="row align-items-center"><div class="col"><div class="border-line">
 

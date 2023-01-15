@@ -14,7 +14,7 @@
           <!-- col -->
           <div class="col-12 col-md-6 offset-lg-1 col-lg-4 order-lg-2 order-1">
             <div class="mb-lg-9 mb-5">
-              <h1 class="mb-1 h2 fw-bold">Se Connecter Sur DSTORE</h1>
+              <h1 class="mb-1 h2 fw-bold">Se Connecter Sur CHIC COQ</h1>
               <p>Connectez-vous et passer autant de commande  que vous voulez.</p>
             </div>
 

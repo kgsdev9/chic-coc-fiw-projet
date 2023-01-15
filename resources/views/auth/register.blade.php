@@ -18,8 +18,8 @@
           <!-- col -->
           <div class="col-12 col-md-6 offset-lg-1 col-lg-4 order-lg-2 order-1">
             <div class="mb-lg-9 mb-5">
-              <h1 class="mb-1 h2 fw-bold">S'inscire Sur DSTORE </h1>
-              <p>Welcome to FreshCart! Enter your email to get started.</p>
+              <h1 class="mb-1 h2 fw-bold">S'inscire CHIC COQ </h1>
+              <p>Bienvienue sur CHIC COQ! Entrer votre email pour commencer.</p>
             </div>
             <!-- form -->
             <form method="POST" action="{{route('register')}}">

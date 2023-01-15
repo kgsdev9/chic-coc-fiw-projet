@@ -47,7 +47,7 @@
                         <!-- badge -->
                         <div class="text-center position-relative ">
                           <div class=" position-absolute top-0 start-0">
-                            <span class="badge bg-danger">Sale</span>
+                            <span class="badge bg-danger">EN STOCK</span>
                           </div>
                           <a href="{{route('product.detail', $value->id)}}">
                             <!-- img --><img src="{{asset('cover/'.$value->img_one)}}" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
@@ -67,7 +67,7 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-half"></i></small>
-                            <span class="text-muted small">4.5(149)</span>
+                            <span class="text-muted small">4(122)</span>
                             <h6>{{$value->price}} FCFA</h6>
                         </div>
                         <!-- price -->
@@ -76,7 +76,7 @@
                           <!-- btn -->
                           <div>
 
-                            <span class="btn btn-primary btn-sm" wire:click="add({{$value->id}})">Commander</span>
+                            <span class="btn btn-primary btn-sm" wire:click="add({{$value->id}})">AJOUTER AU PANIER</span>
                            </div>
                         </div>
                       </div>

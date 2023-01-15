@@ -35,11 +35,11 @@
                         <i class="bi bi-star-half"></i></small> <span class="text-muted small">4.5(149)</span>
                     </div>
                     <div class="d-flex justify-content-between align-items-center mt-3">
-                      <div><span class="text-dark">$18</span> <span class="text-decoration-line-through text-muted">$24</span>
+                      <div><span class="text-dark">{{$value->price}}</span> <span class="text-decoration-line-through text-muted">CFA 2200</span>
                       </div>
                       <div>
 
-                        <span class="btn btn-primary btn-sm"  wire:click="add({{$value->id}})">Commander</span>
+                        <span class="btn btn-primary btn-sm"  wire:click="add({{$value->id}})">AJOUTER AU PANIER</span>
                         </div>
                     </div>
                   </div>

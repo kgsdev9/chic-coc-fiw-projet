@@ -4,11 +4,11 @@
 
 <head>
 
-  <title>POULET STORE</title>
+  <title>CHIC COQ | Vente et Livraison à domicile Poulet</title>
   <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="FreshCart is a beautiful eCommerce HTML template specially designed for multipurpose shops & online stores selling products. Most Loved by Developers to build a store website easily.">
+<meta name="description" content="chic coq is a beautiful eCommerce HTML template specially designed for multipurpose shops & online stores selling products. Most Loved by Developers to build a store website easily.">
 <meta content="Codescandy" name="author" />
 
 
@@ -38,6 +38,8 @@
 <body>
   <!-- navigation -->
 
+
+
   <header class="navbar navbar-light py-lg-5 py-4 px-0 border-bottom border-bottom-lg-0 ">
     <div class="container-fluid">
       <div class="row w-100 align-items-center g-0 g-lg-3">
@@ -53,7 +55,7 @@
               <div class="input-group">
 
 
-                <input type="text" aria-label="Last name" name="searchcategory" class="searchcate form-control w-45" placeholder="Rechercher par   catégorie...">
+                <input type="text" aria-label="Last name" name="searchcategory" class="searchcate form-control w-45" placeholder=" Cherchez un produit...">
              <button class="input-group-text bg-transparent" type="submit">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
                   <circle cx="11" cy="11" r="8"></circle>
@@ -61,6 +63,8 @@
                 </svg>
                 </button>
               </div>
+
+              
               </form>
 
 
@@ -198,38 +202,50 @@
       <ul class="navbar-nav navbar-nav-offcanvac"   >
         <li class="nav-item">
           <a class="nav-link" href="{{URL('/')}}" role="button">
-            Accueil
+            ACCUEIL
           </a>
 
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link" href="{{route('sotre.index')}}" role="button" >
-          Nos Produits
+          NOS PRODUITS
           </a>
 
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link" href="{{route('category.index')}}" role="button" >
-            Nos Categories
+            NOS CATEGORIES
           </a>
         </li>
 
+      
+        
+
+        
 
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Mon Compte
+           MON COMPTE
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('login')}}">Connexion </a></li>
-            <li><a class="dropdown-item" href="{{route('register')}}">Inscription </a></li>
 
+              @guest 
+              <li><a class="dropdown-item" href="{{route('login')}}">SE CONNECTERd </a></li>
+            <li><a class="dropdown-item" href="{{route('register')}}">CREEZ VOTRE COMPTE </a></li>
+
+              @else
+              <li><a class="dropdown-item" href="{{route('login')}}">TABLEAU DE BORD </a></li>
+            <li><a class="dropdown-item" href="{{route('register')}}">CREEZ VOTRE COMPTE </a></li>
+
+              @endguest
+          
 
           </ul>
         </li>
         <li class="nav-item ">
           <a class="nav-link" href="{{route('article.index')}}">
-          Actualités
+          ACTUALITES
           </a>
 
         </li>
@@ -292,20 +308,36 @@
           <ul class="navbar-nav "  style="padding-left: 23%">
             <li class="nav-item dropdown">
               <a class="nav-link " href="{{URL('/')}}" role="button" >
-                Accueil
+                ACCUEIL
               </a>
 
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link " href="{{route('sotre.index')}}" role="button">
-               Nos Produits
+               NOS PRODUITS
               </a>
 
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link" href="{{route('category.index')}}" role="button"
                 aria-expanded="false">
-                Nos CATES
+                NOS CATEGORIES
+              </a>
+
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="{{URL('/presentation')}}" role="button"
+                aria-expanded="false">
+                QUI SOMMES-NOUS
+              </a>
+
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="{{URL('/blog')}}" role="button"
+                aria-expanded="false">
+                ACTUALITES
               </a>
 
             </li>
@@ -313,23 +345,21 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button"
                 aria-expanded="false">
-              Mon Compte
+              MON COMPTE
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{{route('login')}}">Connexion</a></li>
-                <li><a class="dropdown-item" href="{{route('register')}}">Inscription</a></li>
+                @guest   
+                <li><a class="dropdown-item" href="{{route('login')}}">SE CONNECTER</a></li>
+                <li><a class="dropdown-item" href="{{route('register')}}">CREEZ VOTRE COMPTE</a></li>
 
+                @else
+                <li><a class="dropdown-item" href="{{route('login')}}">CONNECTE</a></li>
+                <li><a class="dropdown-item" href="{{route('dashboard')}}">TABLEAU DE BORD</a></li>
 
+                @endguest
+            
               </ul>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link" href="{{route('article.index')}}" role="button" >
-                 Acutalités
-                </a>
-
-              </li>
-
-
           </ul>
         </div>
         <div class="d-block d-lg-none">

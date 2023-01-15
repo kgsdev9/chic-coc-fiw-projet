@@ -23,7 +23,7 @@
         <div class="row">
           <div class="col-12 mb-4">
             <!-- heading -->
-            <h1 class="fw-bold">Nos Articles</h1>
+            <h1 class="fw-bold">NOS ARTICLES</h1>
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@
                   <img src="../assets/images/blog/blog-img-1.jpg" alt="" class="img-fluid rounded-3 w-100">
                 </div>
               </a></div>
-            <div class="mb-3"><a href="#!">DSTORE</a>
+            <div class="mb-3"><a href="#!">CHIC COQ STOCK </a>
 
             </div>
             <!-- text -->

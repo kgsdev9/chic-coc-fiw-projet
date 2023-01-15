@@ -41,7 +41,7 @@
             <div class="row">
               <div class="col-12 mb-6">
 
-                <h3 class="mb-0">Featured Categories</h3>
+                <h3 class="mb-0">CATEGORIES VEDETTES</h3>
 
               </div>
             </div>
@@ -127,7 +127,7 @@
                   <div class="mb-6 d-xl-flex justify-content-between align-items-center">
                      <!-- heading -->
                     <div class="mb-5 mb-xl-0">
-                      <h3 class=" mb-0">Nos Collections</h3>
+                      <h3 class=" mb-0">NOS COLLECTIONS</h3>
                       <p class="mb-0">Profitez de nos Poulets</p>
                     </div>
                     <div>
@@ -281,7 +281,7 @@
                                <!-- btn -->
                               <div class="product-fade-block">
                                 <div class="d-grid mt-4">
-                                    <span class="btn btn-primary rounded-pill" wire:click="add({{$poussin->id}})">Commander </span>
+                                    <span class="btn btn-primary rounded-pill" wire:click="add({{$poussin->id}})">AJOUTER AU PANIIER </span>
 
                                 </div>
                               </div>
@@ -345,7 +345,7 @@
                                <!-- btn -->
                               <div class="product-fade-block">
                                 <div class="d-grid mt-4">
-                                    <span wire:click="add({{$pousse->id}})" class="btn btn-primary rounded-pill">Commander</span>
+                                    <span wire:click="add({{$pousse->id}})" class="btn btn-primary rounded-pill">AJOUTER AU PANIER</span>
 
                                 </div>
                               </div>
