@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Models\Order;
 use Livewire\Component;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 
 class PaymentDelivry extends Component
@@ -13,6 +14,8 @@ class PaymentDelivry extends Component
     public $phone ;
     public $addresse ;
     public $codeOrder ;
+    public $commune ;
+
 
 
 
@@ -23,9 +26,7 @@ class PaymentDelivry extends Component
     }
 
     public function saveOrder() {
-
         $sesion = session('cart');
-
         $sum_quantity = 0 ;
         $total_cart=0;
         foreach( (array) $sesion as $s){
@@ -36,6 +37,14 @@ class PaymentDelivry extends Component
          };
 
 
+         $validatedData = $this->validate([
+            'fullname' => 'required',
+            'phone' => 'required||max:10',
+            'commune'   => 'required',
+            'addresse'     => 'required',
+        ]);
+
+
          $order =Order::create([
             'fullname'=> $this->fullname,
             'adresse_delivry'=> $this->addresse,
@@ -43,7 +52,7 @@ class PaymentDelivry extends Component
             'user_id'=>Auth::user()->id,
             'phone'=> $this->phone,
             'code'=> $this->codeOrder,
-            'payement_status' => 1,
+            'commune' => $this->commune,
         ]);
 
 
@@ -55,7 +64,6 @@ class PaymentDelivry extends Component
                 'amount'=>$s['price']*$s['quantity']
                ]);
          };
-        //  session()->forget('cart');
     return redirect()->route('success.orders');
 
     }
@@ -64,8 +72,6 @@ class PaymentDelivry extends Component
 
     public function render()
     {
-
-
 
 
         $sesion = session('cart');
@@ -77,9 +83,6 @@ class PaymentDelivry extends Component
         foreach( (array)$sesion as $s){
             $total_cart = $total_cart + $s['price']*$s['quantity'];
          };
-
-
-
 
         return view('livewire.payment-delivry', compact('total_cart'))->extends('layout.app')->section('content');;
 

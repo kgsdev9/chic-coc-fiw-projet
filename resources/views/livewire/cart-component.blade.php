@@ -50,7 +50,7 @@
                       <td class="align-middle">
                         <div>
                           <h5 class="fs-6 mb-0"><a href="{{route('product.detail', $details['product_id'])}}" class="text-inherit">{{ Str::limit($details['name'], 30) }}</a></h5>
-                          <small>$.98 / lb</small>
+                          <small>{{ $details['price']}} FCFA</small>
                         </div>
                       </td>
                       <td class="align-middle">

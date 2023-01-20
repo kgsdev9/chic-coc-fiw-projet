@@ -119,13 +119,7 @@
                                             </tr> --}}
                                         </tbody>
                                     </table>
-                                    <!--end table-->
-                                </div>
-                                <div class="mt-3">
-                                    <h6 class="text-muted text-uppercase fw-semibold mb-3">METHODE DE PAIEMENT PAR DEFAUt </h6>
-                                    <p class="text-muted mb-1">MOBILE MONEY </p>
-
-
+                                        <!--end table-->
                                 </div>
                                 <div class="mt-4">
                                     <div class="alert alert-primary">

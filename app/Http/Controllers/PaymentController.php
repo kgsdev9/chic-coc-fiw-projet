@@ -20,6 +20,43 @@ class PaymentController extends Controller
     }
 
 
+    public function paiement() {
+
+        $data = array(
+            'merchantId' => "PP-F986",
+            'amount' => 1000,
+            'description' => "Api PHP",
+            'channel' => "CARD",
+            'countryCurrencyCode' => "952",
+            'referenceNumber' => "REF-".time(),
+            'customerEmail' => "test@gmail.com",
+            'customerFirstName' => "Ishola",
+            'customerLastname' => "Lamine",
+            'customerPhoneNumber' => "01234567",
+            'notificationURL' => "callback_url",
+            'returnURL' => "callback_url",
+            'returnContext' => '{"data":"data 1","data2":"data 2"}',
+        );
+
+        $data = json_encode($data);
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, "https://www.paiementpro.net/webservice/onlinepayment/init/curl-init.php");
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json; charset=utf-8'));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+        curl_setopt($ch, CURLOPT_HEADER, FALSE);
+        curl_setopt($ch, CURLOPT_POST, TRUE);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+
+        $response = curl_exec($ch);
+
+        curl_close($ch);
+
+
+
+    }
+
     public function processTransaction(Request $request)
     {
 

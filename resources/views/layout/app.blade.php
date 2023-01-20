@@ -49,26 +49,23 @@
               <img src="{{asset('logo.jpg')}}" alt="eCommerce HTML Template">
 
             </a>
-            <div class=" w-100 ms-4  d-none d-lg-block ">
-              <form action="{{route('search.cate')}}" method="POST" style="margin-left: 25%">
-                @csrf
-              <div class="input-group">
 
 
-                <input type="text" aria-label="Last name" name="searchcategory" class="searchcate form-control w-45" placeholder=" Cherchez un produit...">
-             <button class="input-group-text bg-transparent" type="submit">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-                  <circle cx="11" cy="11" r="8"></circle>
-                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
-                </button>
-              </div>
+    <div class=" w-100 ms-4  d-none d-lg-block ">
+        <form action="{{route('search')}}"  style="margin-left: 25%">
+        <div class="input-group">
+          <input type="text"  name="search" class="form-control" placeholder="Chercher un produit" />
+       <button class="input-group-text bg-transparent" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          </button>
+        </div>
+        </form>
+      </div>
 
 
-              </form>
-
-
-            </div>
           </div>
           <div class="d-flex justify-content-between w-100 d-lg-none">
             <a class="navbar-brand" href="../index.html">

@@ -4,10 +4,13 @@ use App\Http\Livewire\Welcome;
 use App\Http\Livewire\CartComponent;
 use App\Http\Livewire\ProductDetail;
 use App\Http\Livewire\OrderComponent;
+use App\Http\Livewire\PaymentDelivry;
 use App\Http\Livewire\Storecomponent;
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\SearchComponent;
 use App\Http\Controllers\HomeController;
 use App\Http\Livewire\CategoryComponent;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Livewire\CategortAppcomponent;
 use App\Http\Livewire\OtherProductComponent;
@@ -21,7 +24,6 @@ use App\Http\Controllers\Users\OrderviewController;
 use App\Http\Controllers\Users\RegisteredController;
 use App\Http\Controllers\Category\CategoryController;
 use App\Http\Controllers\Coeur\LikeProductController;
-use App\Http\Livewire\PaymentDelivry;
 
 /*
 |--------------------------------------------------------------------------
@@ -105,7 +107,7 @@ Route::get('/contact', function(){
     return view('dashboard.users.contact.index');
 });
 
-
+Route::get('/pro', [PaymentController::class, 'paiement']);
 
 
 
@@ -118,7 +120,7 @@ Route::get('/presentation', function(){
     return view('actualy');
 });
 
-
+Route::get('/seatch', [SearchController::class, 'search'])->name('search');
 
 Route::get('/categories/index', CategoryComponent::class)->name('category.index');
 

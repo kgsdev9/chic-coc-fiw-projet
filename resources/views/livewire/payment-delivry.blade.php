@@ -35,19 +35,62 @@
 
                         <!-- input -->
                       <div class="col-md-12 mb-3">
-                        <label class="form-label" for="fname"> Nom et Prenom<span class="text-danger">*</span></label>
-                        <input type="text"  wire:model="fullname" placeholder="Votre Nom et prenom" class="form-control">
+                        <label class="form-label" for="fname"> Nom et Prenom  @error('fullname')
+                            @if($errors->has('fullname'))
+                            <span>{{ $errors->first('fullname') }}</span>
+                        @endif
+                            <small>{{$message}}</small>
+
+                        @enderror <span class="text-danger">*</span></label>
+                        <input type="text"  wire:model="fullname" placeholder="Votre Nom et prenom" class="form-control" value="{{old('fullname')}}">
                       </div>
 
                       <div class="col-md-12 mb-3">
                         <!-- input -->
-                        <label class="form-label" for="company"> Télephone<span class="text-danger">*</span></label>
-                        <input type="number" placeholder="Telephone"  wire:model="phone"  class="form-control">
+                        <label class="form-label" for="company"> Télephone  @error('phone')
+
+                            <small>{{$message}}</small>
+
+                        @enderror<span class="text-danger">*</span></label>
+                        <input type="number"   placeholder=" Exemple : +225 07 68 35 68 66"  wire:model="phone"  class="form-control" value="{{old('phone')}}">
                       </div>
+
+                          <div class="col-md-12 mb-3">
+                        <!-- input -->
+                        <label class="form-label" for="company">Commune @error('commune')
+
+                            <small>{{$message}}</small>
+
+                        @enderror<span class="text-danger">*</span></label>
+
+                        <select  wire:model="commune" id="" class="form-control">
+                            <option value="">-------------</option>
+                            <option value="Abobo">Abobo</option>
+                            <option value="Bingerville">Bingerville</option>
+                            <option value="Koumassi">Koumassi</option>
+                            <option value="Yopougon">Yopougon</option>
+                            <option value="Plateau">Plateau</option>
+                            <option value="Atekoube">Atekoube</option>
+                            <option value="Adjame"> Adjame</option>
+                            <option value="Yopougon">Yopougon</option>
+                            <option value="Port Bouet">Port Bouet</option>
+                            <option value="Marcory">Marcory</option>
+                            <option value="Songon">Songon</option>
+                            <option value="Cocody">Cocody</option>
+                            <option value="Treichville">Treichville</option>
+                        </select>
+                      </div>
+
+
+
                       <div class="col-md-12 mb-3">
                         <!-- input -->
-                        <label class="form-label" for="comments"> Adresse De Livraison </label>
-                        <textarea  wire:model="addresse"  id="message" placeholder="Description de votre lieu de livraison" class="form-control"></textarea>
+                        <label class="form-label" for="comments"> Adresse De Livraison  @error('addresse')
+
+                            <small>{{$message}}</small>
+
+                        @enderror</label>
+                        <textarea  wire:model="addresse"  id="message" placeholder="Description de votre lieu de livraison" class="form-control" ></textarea>
                       </div>
                       <div class="col-md-12">
                         <!-- btn -->

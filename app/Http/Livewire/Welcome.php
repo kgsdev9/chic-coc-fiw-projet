@@ -22,6 +22,8 @@ class Welcome extends Component
     public $demioeuf ;
     public $randomProduct;
 
+
+ 
     public function mount() {
 
         $this->category = Category::all();

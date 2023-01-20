@@ -17,7 +17,8 @@ class Order extends Model
         'user_id',
         'code',
         'amount',
-        'image'
+        'commune'
+
     ];
 
     public function user() {

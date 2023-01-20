@@ -30,7 +30,7 @@
 
                                                 </div>
                                             </th>
-                                            <th class="sort text-uppercase" data-sort="invoice_id">Code de paiement</th>
+                                            <th class="sort text-uppercase" data-sort="invoice_id">Code De livraison</th>
                                             <th class="sort text-uppercase" data-sort="customer_name">Clients </th>
                                             <th class="sort text-uppercase" data-sort="email">TELEPHONE</th>
                                             <th class="sort text-uppercase" data-sort="country">Quantite</th>
@@ -50,12 +50,12 @@
                                                 <td class="id"><a href="javascript:void(0);" onclick="ViewInvoice(this);" data-id="25000351" class="fw-medium link-primary">{{$ressource->code}}</a></td>
                                                 <td class="customer_name">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="{{asset('assets/img/blog/post_avatar_img.png')}}" alt="" class="avatar-xs rounded-circle me-2">
+
 
                                                        {{$ressource->user->name}}
                                                     </div>
                                                 </td>
-                                                <td class="email"> {{$ressource->phone}}</td>
+                                                <td class="email">+225 {{$ressource->phone}}</td>
                                                 <td class="country">{{$ressource->quantity}}</td>
                                                 <td class="date">{{$ressource->created_at}}</td>
 
@@ -68,7 +68,7 @@
 
                                                                 <a href="{{route('orders.details', $ressource->id)}}" class="tn btn-soft-secondary btn-sm dropdown">       <i class="ri-eye-fill align-bottom me-2 text-muted"></i></a>
 
-                                                              
+
                                                             </div>
                                                         </td>
                                                     </tr>

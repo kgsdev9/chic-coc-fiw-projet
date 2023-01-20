@@ -40,7 +40,7 @@
                   <div class="form-check">
 
                   </div>
-                  <div> Mot de passe oublié  <a href="{{route('password.request')}}">Rénitialiser</a></div>
+               
                 </div>
                 <!-- btn -->
                 <div class="col-12 d-grid"> <button type="submit" class="btn btn-primary">Se Connecter</button>

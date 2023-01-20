@@ -34,7 +34,7 @@
 
                                     </div>
                                 </div>
-                              
+
                             </div>
 
                             <div class="table-responsive table-card mt-3 mb-1">
@@ -59,14 +59,6 @@
 
                                                 <td class="date">{{$ressource->created_at->diffForHumans()}}</td>
                                                 <td class="date">{{$ressource->role->name}}</td>
-                                                <td class="status">
-                                                        @if($ressource->confirmated_account ==0)
-                                                    <span class="badge badge-soft-danger text-uppercase">Inactif</span>
-                                                    @elseif($ressource->confirmated_account ==1)
-                                                    <span class="badge badge-soft-success text-uppercase">Active</span>
-                                                    @endif
-                                                </td>
-
                                                 <td>
                                                     <div class="d-flex gap-2">
                                                         <div class="edit">
