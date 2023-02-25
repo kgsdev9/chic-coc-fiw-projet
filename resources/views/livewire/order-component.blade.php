@@ -53,7 +53,7 @@
                                 </div>
                               </div>
                             </div>
-                            {{-- <!-- card -->
+                      <!-- card -->
                             <div class="card card-bordered shadow-none mb-2">
                               <!-- card body -->
                               <div class="card-body p-6">
@@ -66,49 +66,13 @@
                                     </label>
                                   </div>
                                   <div>
-                                    <h5 class="mb-1 h6"> Credit / Debit Card</h5>
-                                    <p class="mb-0 small">Safe money transfer using your bank accou k account. We support
-                                      Mastercard tercard, Visa, Discover and Stripe.</p>
-                                  </div>
-                                </div>
-                                <div class="row g-2">
-                                  <div class="col-12">
-                                    <!-- input -->
-                                    <div class="mb-3">
-                                      <label class="form-label">Card Number</label>
-                                      <input type="text" class="form-control" placeholder="1234 4567 6789 4321">
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6 col-12">
-                                    <!-- input -->
-                                    <div class="mb-3 mb-lg-0">
-                                      <label class="form-label">Name on card </label>
-                                      <input type="text" class="form-control" placeholder="Enter your first name">
-                                    </div>
-                                  </div>
-                                  <div class="col-md-3 col-12">
-                                    <!-- input -->
-                                    <div class="mb-3  mb-lg-0 position-relative">
-                                      <label class="form-label">Expiry date </label>
-                                      <input class="form-control flatpickr flatpickr-input" type="text" placeholder="Select Date" readonly="readonly">
-                                      <div class="position-absolute bottom-0 end-0 p-3 lh-1">
-                                        <i class="bi bi-calendar text-muted"></i>
-                                      </div>
-
-                                    </div>
-                                  </div>
-                                  <div class="col-md-3 col-12">
-                                    <!-- input -->
-                                    <div class="mb-3  mb-lg-0">
-                                      <label class="form-label">CVV code </label>
-                                      <input type="password" class="form-control" placeholder="***">
-
-                                    </div>
+                                    <h5 class="mb-1 h6"> PAIEMENT PAR ORANGE MONEY WAVE MTN MONEY </h5>
+                                    <a href="{{route('checkout.mobile')}}" target="_blank">FINALISER LE PAIEMENT </a>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <!-- card --> --}}
+
 
 
                             <!-- Button -->

@@ -23,6 +23,7 @@ use App\Http\Controllers\Product\ProductController;
 use App\Http\Controllers\Users\OrderviewController;
 use App\Http\Controllers\Users\RegisteredController;
 use App\Http\Controllers\Category\CategoryController;
+use App\Http\Controllers\CineyPyayController;
 use App\Http\Controllers\Coeur\LikeProductController;
 
 /*
@@ -129,3 +130,6 @@ Route::get('/payment', PaymentDelivry::class)->name('payment')->middleware('auth
 Route::get('process-transaction', [PaymentController::class, 'processTransaction'])->name('processTransaction');
 Route::get('success-transaction', [PaymentController::class, 'successTransaction'])->name('successTransaction');
 Route::get('cancel-transaction', [PaymentController::class, 'cancelTransaction'])->name('cancelTransaction');
+
+
+Route::get('/intent-paiment-wave', [CineyPyayController::class, 'createOrderBiling'])->name('checkout.mobile');
